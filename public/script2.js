@@ -56,8 +56,10 @@ function addSquareEventListeners(square, img, type, name, price) {
   // Get the hidden element within the square
   const hidden = square.querySelector('.hidden');
 
+
   // Add event listener for mouse click
   square.addEventListener('click', () => {
+    alert("Item added to cart")
     // Log the selected item details to the console
     console.log("Item added to cart:", { img, type, name, price });
 
