@@ -1,0 +1,183 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px rgba(152, 152, 152, 0.5);
+    margin-bottom: 40px;
+    
+}
+.main .profile{
+  cursor: none;
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+.nav-links li:hover{
+border-bottom: 2px solid black;
+font-size: 16px;
+
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Slideshow Styles */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+
+
+.dropbtn {
+  background-color:white;
+  color: black;
+
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbtn:hover{
+  border-bottom: 2px solid black;
+}
+/* Position the "next button" to the right */
+
+.search{
+  background: rgb(217, 216, 216);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+.search input{
+  padding: 10px;
+    width: 400px;
+     height: 35px;
+     background:rgb(217, 216, 216);
+    border: none;
+}
+.search input:focus {
+  outline: none;
+  border: none; /* Remove border on focus */
+}
+
+.slider-container {
+  width: 100%;
+  height: 50vh; /* 50% of viewport height */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .profile{
+  display: flex;
+  gap: 30px;
+}
+.main  p{
+  font-family: sans-serif;
+  font-size: 25px;
+ 
+}
+.main .cardContainer{
+  width: 100vw;
+height:40vh;
+display: flex;
+gap: 0px;
+background: #000;
+flex-direction: row;
+}
+
+.main .cardContainer .cards{
+  display: inline;
+
+  margin-top: 40px;
+
+}
+.main .circleCont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 40vh;
+
+}
+.main .circleCont .circle{
+  display: inline;
+  padding: 10px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+}
+.main .cardContainer {
+  overflow: hidden; /* Hide overflowing cards */
+  display: flex;
+  gap: 0px;
+  background: #000;
+  flex-direction: row;
+  width: 100%; /* Ensure full width */
+}

@@ -1,0 +1,266 @@
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px rgba(152, 152, 152, 0.5);
+    margin-bottom: 40px;
+    
+}
+body{
+    background: rgb(236, 222, 224);
+}
+.main .profile{
+  cursor: none;
+
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+.nav-links li:hover{
+border-bottom: 2px solid black;
+font-size: 16px;
+
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Slideshow Styles */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+
+
+.dropbtn {
+  background-color:white;
+  color: black;
+
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropbtn:hover{
+  border-bottom: 2px solid black;
+}
+/* Position the "next button" to the right */
+
+.search{
+  background: rgb(217, 216, 216);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+}
+.search input{
+  padding: 10px;
+    width: 400px;
+     height: 35px;
+     background:rgb(217, 216, 216);
+    border: none;
+}
+.search input:focus {
+  outline: none;
+  border: none; /* Remove border on focus */
+}
+/*  */
+.login{
+    width: 28vw;
+    height: 50vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    border-radius: 20px;
+    background: white;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.login form input{
+    width: 25vw;
+    height: 35px;
+    padding: 5px;
+
+    
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(168, 168, 168);
+}
+html, body
+{
+margin-left: 4%;
+margin-right: 4%;
+margin-top: 0%;
+font-family: 'Times New Roman', Times, serif;
+
+}
+.topRow
+{
+    display: flex;
+    gap: 19px;
+    justify-content: flex-end;
+   
+}
+.topRow button
+{
+    background: transparent;
+    border: none;
+}
+/* login form starts */
+.container-login, .container-signup, .forgetPW
+{
+    display: none;
+    
+}
+
+.closeButton, .closeButtonSignup, .closeButtonForgetPW
+{
+   position: relative;
+    left: 95%;
+}
+
+.container-login, .forgetPW
+{
+position: fixed;
+left: 30%;
+top: 20%;
+padding: 10px;
+width: 500px;
+background-color: white;
+border: 2px solid green;
+border-radius: 10px;
+}
+
+.container-signup
+{
+    position: fixed;
+left: 30%;
+top: 10%;
+padding: 10px;
+
+background-color: white;
+border: 2px solid green;
+border-radius: 10px;
+ max-height: 80vh; 
+ /* overflow-y: auto; */
+ overflow-y: auto;
+ overflow-x: hidden;
+ width: 500px;
+    
+}
+
+.container-login form, .container-signup form, .forgetPW form
+{
+    display: grid;
+   gap: 5px;
+   padding: 10px;
+}
+
+.container-login label, .container-signup label, .forgetPW label
+{
+    color: green;
+    font-size: 17px;
+}
+
+.container-login input, .container-signup input, .forgetPW input
+{
+    height: 30px;
+    background-color: transparent;
+    opacity: 0.9;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.loginbuttons
+{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+.button-login, .button-login-signup, #button-signup, .forgetPWBtn
+{
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 5px;
+    color: white;
+    
+}
+#button-signup, .forgetPWBtn
+{
+    margin: auto;
+}
+/* login form ends */
+
+@media (max-width: 768px) {
+    .container-login, .container-signup, .forgetPW {
+        left: 10%; 
+        width: 80%; 
+        max-width: none; 
+    }
+}

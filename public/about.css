@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #b4b2b2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#our-story, #our-values, #what-sets-us-apart, #our-commitment {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.highlight {
+  color: #ff9900;
+}
+#customer-reviews {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.review img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-content {
+  text-align: center;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.star {
+  color: #ffd700;
+}
+
+
+section .review{
+  background: whitesmoke;
+
+  position: relative;
+
+}
+section#customer-reviews .review:nth-child(1) {
+  background: whitesmoke;
+  box-shadow: 0px 6px 10px rgb(82, 82, 82);
+  top: 5px;
+  transition: position 0.3s ease;
+}
+
+section#customer-reviews .review:nth-child(2) {
+  background: whitesmoke;
+  box-shadow: 0px 6px 10px rgb(82, 82, 82);
+  top: 5px;
+  transition: position 0.3s ease;
+}
+section#customer-reviews .review:nth-child(3) {
+  background: whitesmoke;
+  box-shadow: 0px 6px 10px rgb(82, 82, 82);
+  top: 5px;
+  transition: position 0.3s ease;
+}
+section#customer-reviews .review:nth-child(3) {
+  background: whitesmoke;
+  box-shadow: 0px 6px 10px rgb(82, 82, 82);
+  top: 5px;
+  transition: position 0.3s ease;
+}
+section#customer-reviews .review {
+  background: whitesmoke;
+  box-shadow: 0px 6px 10px rgb(82, 82, 82);
+  transition: transform 0.3s ease;
+}
+
+section#customer-reviews .review:hover {
+  transform: translateY(-5px);
+}
+
+/* Add more nth-child selectors for additional reviews if needed */

@@ -1,0 +1,57 @@
+.store {
+    display: flex;
+    flex-wrap: wrap; /* Allow squares to wrap to the next line */
+
+    align-items: flex-start; /* Align squares to the top */
+    gap: 20px; /* Add some spacing between squares */
+    padding: 20px;
+  
+    border: 1px solid rgb(199, 198, 198);
+    width: 95vw;
+    margin: auto;
+  }
+  
+  /* Style for each square */
+  .square {
+    width: 180px;
+
+    padding: 5px;
+    font-size: 10px;
+    position: relative; /* Ensure squares are positioned relative to their container */
+    left: 20px;
+  }
+  
+  .square img {
+    width: 100%; /* Make images fill the square */
+  }
+  
+  .square:hover {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow on all edges */
+}
+
+  .square .hidden {
+    background: white;
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    font-size: 17px;
+    position: absolute; /* Position the hidden div relative to its parent square */
+    bottom: 15px ; /* Align the hidden div to the bottom of the square */
+    left: 0; /* Align the hidden div to the left of the square */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .square:hover .hidden {
+    opacity: 1;
+  }
+  
+  .square .hidden p {
+    font-size: 20px;
+    border: 1px solid gray;
+    height: 28px;
+    width: 80%;
+    margin: auto;
+  }
+  
